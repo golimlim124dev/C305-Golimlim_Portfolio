@@ -288,6 +288,14 @@
             backdrop-filter: blur(10px);
         }
 
+        footer a {
+            transition: transform 0.3s ease;
+        }
+
+        footer a:hover {
+            transform: scale(1.2);
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
@@ -340,11 +348,10 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="py-5 bg-light text-dark">
+    <section id="projects" class="py-5">
         <div class="container">
             <h2 class="fw-bold text-center mb-5"><i class="fas fa-project-diagram me-2"></i>PROJECTS</h2>
             <div class="row g-4">
-
                 <div class="col-md-4">
                     <div class="card h-100">
                         <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Project 1">
@@ -355,7 +362,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="card h-100">
                         <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Project 2">
@@ -366,10 +372,9 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="card h-100">
-                    <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Project 3">
+                        <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Project 3">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-semibold">Project Three</h5>
                             <p class="card-text text-muted small flex-grow-1">A professional, clean description of Project Three.</p>
@@ -377,7 +382,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -387,7 +391,7 @@
         <div class="container">
             <h2 class="fw-bold text-center mb-4"><i class="fas fa-envelope me-2"></i>CONTACT</h2>
             <div class="col-md-8 mx-auto">
-                <form class="border p-4 rounded shadow-sm bg-light text-dark" method="post" action="#">
+                <form class="border p-4 rounded shadow-sm" method="post" action="#">
                     <div class="row g-3">
                         <div class="col-md-6">
                             <input type="text" class="form-control" name="name" placeholder="Name" required>
@@ -405,6 +409,12 @@
 
     <!-- FOOTER -->
     <footer class="text-center">
+        <div class="mb-2">
+            <a href="#" class="text-light me-3" title="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-light me-3" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="mailto:your-email@gmail.com" class="text-light me-3" title="Gmail"><i class="fas fa-envelope fa-lg"></i></a>
+            <a href="#" class="text-light" title="GitHub"><i class="fab fa-github fa-lg"></i></a>
+        </div>
         © <span id="year"></span> MyPortfolio — All rights reserved. <i class="fas fa-heart text-danger ms-1"></i>
     </footer>
 
