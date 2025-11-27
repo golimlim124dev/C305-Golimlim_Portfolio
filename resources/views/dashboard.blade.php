@@ -51,8 +51,8 @@
 <body>
 
     <div class="container">
-        <h1>Welcome Home!</h1>
-        <p>You are successfully logged in.</p>
+        <h1>Hi Kumag!!!</h1>
+        <p>Bat napa rito kang hayop ka??</p>
         <a href="/dashboard">Go to Dashboard</a>
     </div>
 
