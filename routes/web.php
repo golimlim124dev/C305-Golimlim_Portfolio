@@ -1,17 +1,21 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 Route::get('/', function () {
     return view('portfolio.Portfolio');
 });
 
-Route::get('register',[authcontroller::class,'showregister'])->name('register.form')
-Route::post('register',[authcontroller::class,'register'])->name('register')
+// Registration Routes
+Route::get('register', [AuthController::class, 'showRegister'])->name('register.form');
+Route::post('register', [AuthController::class, 'register'])->name('register');
 
-Route::get('login',[authcontroller::class,'showlogin'])->name('login.form')
-Route::post('login',[authcontroller::class,'login'])->name('login')
-Route::get('dashboard', function(){
+// Login Routes
+Route::get('login', [AuthController::class, 'showLogin'])->name('login.form');
+Route::post('login', [AuthController::class, 'login'])->name('login');
+
+// Dashboard
+Route::get('dashboard', function () {
     return view('dashboard');
-    
-})
+})->name('dashboard');
