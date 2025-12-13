@@ -167,7 +167,7 @@ input:focus,select:focus{
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div class="p-8 card-premium">
-            <h3 class="font-semibold mb-3 text-lg">Education</h3>
+            <h3 class="font-semibold mb-3 text-white">Education</h3>
             <p class="text-sm text-gray-400">
                 BS Computer Science<br>
                 3rd Year — City College of Angeles
@@ -175,14 +175,14 @@ input:focus,select:focus{
         </div>
 
         <div class="p-8 card-premium">
-            <h3 class="font-semibold mb-3 text-lg">Interests</h3>
+            <h3 class="font-semibold mb-3 text-white">Interests</h3>
             <p class="text-sm text-gray-400">
                 Programming · UI/UX · Cybersecurity · Media Editing
             </p>
         </div>
 
         <div class="p-8 card-premium">
-            <h3 class="font-semibold mb-3 text-lg">Achievements</h3>
+            <h3 class="font-semibold mb-3 text-white">Achievements</h3>
             <p class="text-sm text-gray-400">
                 Graduated with Honors<br>
                 Honor Roll (All Quarters)
@@ -203,7 +203,7 @@ input:focus,select:focus{
         ['UI / UX Design',90],
     ] as [$label,$value])
         <div class="mb-6">
-            <p class="mb-2 text-sm tracking-wide text-gray-300">{{ $label }}</p>
+            <p class="mb-2 text-sm tracking-wide text-black-300">{{ $label }}</p>
             <div class="w-full bg-gray-800/60 rounded-full h-4 overflow-hidden">
                 <div class="h-4 rounded-full progress-bar" data-width="{{ $value }}"></div>
             </div>
@@ -236,7 +236,7 @@ input:focus,select:focus{
                     src="{{ $project->image ? asset('storage/'.$project->image) : 'https://via.placeholder.com/600x400' }}"
                     class="h-52 w-full object-cover">
                 <div class="p-7">
-                    <h3 class="font-semibold text-lg mb-3">{{ $project->title }}</h3>
+                    <h3 class="font-semibold text-white mb-3">{{ $project->title }}</h3>
                     <p class="text-sm text-gray-400">
                         {{ \Illuminate\Support\Str::limit($project->description,140) }}
                     </p>
