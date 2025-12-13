@@ -32,7 +32,7 @@ The system is ideal for developers, freelancers, and students who want a **dynam
 - Modern portfolio landing page
 - Dynamic project listing from database
 - Project cards with image, title, description, category, and external link
-- Contact form with validation
+- Contact Details(Social Media Account)
 - Fully responsive design
 
 ### 🔐 Authentication
